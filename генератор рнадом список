@@ -1,0 +1,12 @@
+import random
+count=int(input("ведите колво чисел: "))
+start=int(input("ведите мин (возможное) число: "))
+end=int(input("введите макс (возможное) число: "))
+
+result_list = []
+
+for i in range(count):
+    number = random.randint(start, end)
+    result_list.append(number)
+print("рандом числа бтв:")
+print(result_list)
