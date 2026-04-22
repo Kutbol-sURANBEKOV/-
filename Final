@@ -1,0 +1,13 @@
+import random
+count=int(input("введите колво чисел"))
+start=int(input("введите мин число"))
+end=int(input("введите макс число"))
+if start>end:
+    print("ошибочка, надо мин меньше макс")
+else:
+    result_list=[]
+for i in range(count):
+    number=random.randint(start,end)
+    result_list.append(number)
+print("ваш список")
+print(result_list)
